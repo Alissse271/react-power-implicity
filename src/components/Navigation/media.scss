@@ -1,0 +1,38 @@
+@media (max-width: 960px) {
+    .nav {
+        grid-template-columns: 1fr 4fr 3fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        grid-template-columns: 3fr 2fr 1fr;
+    }
+    .nav__logo {
+        img {
+            height: 40px;
+        }
+    }
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__button {
+        min-height: 40px;
+    }
+    .nav-burger {
+        display: flex;
+        justify-self: end;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        padding: 22px 0;
+        margin: 0 12px;
+    }
+    .nav__button {
+        padding: 10px 10px;
+        width: 140px;
+    }
+}
