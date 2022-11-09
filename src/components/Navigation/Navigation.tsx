@@ -1,6 +1,6 @@
 import "./styles.scss";
 import "./media.scss";
-import logo from "../../img/logo.svg";
+import { ReactComponent as LogoIcon } from "../../assets/images/logo.svg";
 
 export const Navigation = () => {
     const menuItems = [
@@ -19,19 +19,19 @@ export const Navigation = () => {
     ];
     return (
         <nav className="nav">
-            <div className="logo nav__logo">
-                <img src={logo} alt="logo" />
-            </div>
-            <ul className="menu nav__menu">
+            <a href="#" className="nav__link-logo">
+                <LogoIcon className="nav__logo" />
+            </a>
+            <nav className="nav__menu">
                 {menuItems.map(({ label, link }) => {
                     return (
-                        <li>
-                            <a href={link}>{label}</a>
-                        </li>
+                        <a href={link} className="nav__menu-link">
+                            {label}
+                        </a>
                     );
                 })}
-            </ul>
-            <button type="button" className="button nav__button">
+            </nav>
+            <button type="button" className="nav__button">
                 Download for free
             </button>
             <div className="nav-burger">

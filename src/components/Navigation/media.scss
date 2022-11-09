@@ -9,9 +9,7 @@
         grid-template-columns: 3fr 2fr 1fr;
     }
     .nav__logo {
-        img {
-            height: 40px;
-        }
+        height: 40px;
     }
     .nav__menu {
         display: none;
@@ -34,5 +32,12 @@
     .nav__button {
         padding: 10px 10px;
         width: 140px;
+    }
+    .nav-burger {
+        width: 32px;
+        height: 32px;
+    }
+    .nav-burger__line {
+        width: 32px;
     }
 }

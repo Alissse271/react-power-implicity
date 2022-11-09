@@ -1,12 +1,14 @@
 @media (max-width: 800px) {
     .slider {
         padding: 90px 0 130px 0;
-        max-width: 400px;
+    }
+    .slider__container {
+        max-width: 425px;
     }
 }
 
 @media (max-width: 620px) {
-    .slider .title {
+    .slider__title {
         font-size: 52px;
         line-height: 115%;
     }
@@ -14,18 +16,20 @@
 @media (max-width: 425px) {
     .slider {
         padding: 50px 0 70px 0;
+    }
+    .slider__container {
         max-width: 310px;
     }
-    .slider .title {
+    .slider__title {
         font-size: 32px;
     }
-    .slider .subtitle {
-        font-size: 14px;
-    }
-    .slider .button {
-        width: 200px;
-    }
     .slider__subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .slider__button {
+        width: 150px;
+        min-height: 45px;
         margin-bottom: 40px;
     }
 }
